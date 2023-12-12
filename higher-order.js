@@ -20,3 +20,25 @@ const toThePower = (num, pow) => {
 };
 
 console.log(toThePower(3, 3));
+
+
+
+
+// in class example, changed same function name repeatfn to repeattfn (2 t's)
+const repeattFn = (num, callback) => {
+  for (let i = 0; i < num; i++) {
+    callback(i)
+  }
+}
+
+const doubleNumber = (num) => {
+  console.log(num * 2)
+}
+
+repeattFn(5, (param)=>{
+  console.log(param)
+})
+
+repeattFn(5, doubleNumber)
+
+repeattFn(5, counterInstance.getCount)
